@@ -20,6 +20,8 @@ Added functionalities:
 | create-account.php | Allows users to create an account                           |
 | welcome.php        | Users will be redirected to this page if they are logged in |
 | accounts.txt       | Usernames and salted hashed passwords stored in here        |
+| /assets            | Folder containing CSS                                       |
+| /libraries         | Folder containing HTML Purifier library                     |
 
 
 ### The Zendesk Product Security Challenge
