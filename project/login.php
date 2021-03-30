@@ -32,5 +32,7 @@ if (isset($_POST['loginButton'])) {
     }
     echo "<script>alert('Wrong username or password');window.location.href='index.php';</script>";
     fclose($file);
+} else {
+    header("location: index.php");
 }
 ?>

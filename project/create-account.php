@@ -26,7 +26,7 @@ if(isset($_POST['createAccount'])) {
         $text = $username . ":" . $hashedPassword . "\n";
         fwrite ($fp, $text);
         fclose ($fp);
-        echo'<script>alert("Account created!");window.location.href="index.html";</script>';
+        echo'<script>alert("Account created!");window.location.href="index.php";</script>';
     }
 }
 ?>

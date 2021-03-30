@@ -1,1 +1,1 @@
-test:$2y$10$TQNEztIbgRrcj0trwO90Ueb1R3m9TmxCp0SJ3NcSrzt.VbPwUSPZe
+user:$2y$10$KmuLpzutjG1eybmtgRmqQuM1JbZzss1OitEn74K1djfXrX51Ez.oi
