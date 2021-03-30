@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['logged_in'])) {
+    header("location: welcome.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +20,9 @@
 </head>
 
 <body>
+    <?php
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    ?>
 
     <div class="login-form">
         <form action="login.php" id="loginForm" method="post">
@@ -27,9 +37,11 @@
                 <button type="submit" class="btn btn-primary btn-block" name="loginButton" id="loginButton">Log in</button>
             </div>
             <div class="clearfix">
-                <label class="pull-left checkbox-inline"><input type="checkbox" id="rememberMe"> Remember me</label>
+                <label class="pull-left checkbox-inline"><input type="checkbox" name="rememberMe"> Remember me</label>
                 <a href="#" id="forgetPassword" class="pull-right">Forgot Password?</a>
             </div>
+            <!-- Embed CSRF token into the form -->
+            <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']?>"/>
         </form>
         <p class="text-center"><a href="/create-account.php">Create an Account</a></p>
     </div>

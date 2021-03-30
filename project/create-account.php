@@ -7,7 +7,11 @@ Some assumptions are:
 
 <?php
 if(isset($_POST['createAccount'])) {
-    $username = $_POST['username'];
+    include_once 'libraries/HTMLPurifier/HTMLPurifier.auto.php';
+    $config = HTMLPurifier_Config::createDefault();
+	$purifier = new HTMLPurifier($config);
+
+    $username = $purifier->purify($_POST['username']); //Input sanitization 
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirmPassword'];
     if($password != $confirmPassword) {
