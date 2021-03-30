@@ -15,17 +15,17 @@ In this repository, there are the following files:
 
 As part of the challenge, you need to implement an authentication mechanism with as many of the following features as possible. It is a non exhaustive list, so feel free to add or remove any of it as deemed necessary.
 
-1. Input sanitization and validation
-2. Password hashed
-3. Prevention of timing attacks
-4. Logging
-5. CSRF prevention
-6. Multi factor authentication
-7. Password reset / forget password mechanism
-8. Account lockout
-9. Cookie
-10. HTTPS
-11. Known password check
+- [ ] Input sanitization and validation
+- [X] Password hashed
+- [ ] Prevention of timing attacks
+- [ ] Logging
+- [ ] CSRF prevention
+- [ ] Multi factor authentication
+- [ ] Password reset / forget password mechanism
+- [ ] Account lockout
+- [ ] Cookie
+- [ ] HTTPS
+- [ ] Known password check
 
 You will have to create a simple binary (platform of your choice) to provide any server side functionality you may require. Please document steps to run the application. Your submission should be a link to your Github repository which you've already forked earlier together with the source code and binaries.
 
