@@ -23,6 +23,9 @@ Added functionalities:
 | /assets            | Folder containing CSS                                       |
 | /libraries         | Folder containing HTML Purifier library                     |
 
+Sample account stored in accounts.txt:
+- Username: `user`
+- Password: `user`
 
 ### The Zendesk Product Security Challenge
 
