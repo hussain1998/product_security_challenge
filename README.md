@@ -1,7 +1,7 @@
 # Zendesk Product Security
 
 Simple web server set-up:
-1. Download and install PHP [from here](https://www.php.net/downloads)
+1. Download and install PHP 8.0 [from here](https://www.php.net/downloads)
 2. Clone [this git repo](https://github.com/hussain1998/product_security_challenge) onto your computer
 3. Change directory to /product_security_challenge/project/
 4. Run `php -S localhost:8000 router.php` in command line
