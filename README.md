@@ -1,4 +1,27 @@
 # Zendesk Product Security
+
+Simple web server set-up:
+1. Download and install PHP [from here](https://www.php.net/downloads)
+2. Clone [this git repo](https://github.com/hussain1998/product_security_challenge) onto your computer
+3. Change directory to /product_security_challenge/project/
+4. Run `php -S localhost:8000 router.php` in command line
+5. Use the browser to access [http://localhost:8000/](http://localhost:8000/) 
+
+Added functionalities:
+- Used PHP session to stay logged in during the session
+- Created a CSRF token which will be embedded into forms to prevent CSRF attack
+- Used [HTML Purifier](http://htmlpurifier.org/) library to sanitize inputs (Standards compliant)
+- Stored username and salted hashed passwords accounts.txt file. Used PHP's password_hash() for hashing.
+
+| File               | Purpose                                                     |
+|--------------------|-------------------------------------------------------------|
+| index.php          | Main entry point. Shows a log in page                       |
+| login.php          | Process log in information and verifies users               |
+| create-account.php | Allows users to create an account                           |
+| welcome.php        | Users will be redirected to this page if they are logged in |
+| accounts.txt       | Usernames and salted hashed passwords stored in here        |
+
+
 ### The Zendesk Product Security Challenge
 
 Hello friend,
