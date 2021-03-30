@@ -15,11 +15,11 @@ In this repository, there are the following files:
 
 As part of the challenge, you need to implement an authentication mechanism with as many of the following features as possible. It is a non exhaustive list, so feel free to add or remove any of it as deemed necessary.
 
-- [ ] Input sanitization and validation
+- [X] Input sanitization
 - [X] Password hashed
 - [ ] Prevention of timing attacks
 - [ ] Logging
-- [ ] CSRF prevention
+- [X] CSRF prevention
 - [ ] Multi factor authentication
 - [ ] Password reset / forget password mechanism
 - [ ] Account lockout
